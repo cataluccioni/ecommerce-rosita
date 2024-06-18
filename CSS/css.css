@@ -1,0 +1,89 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.bg-pink {
+    background-color: #fff6fa;
+}
+
+.nav-link {
+  color: #c05aa2;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font: weight 500px;;
+    font-style: normal;
+  }
+
+
+
+.nav-link:hover {
+    color:#ff006a;
+}
+
+
+.logo img {
+    max-width: 150px;
+}
+
+
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+.carousel-container {
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+.text-center{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: #c05aa2;
+  font-size: 2em;
+
+}
+.background{
+    background-color: #ffecf5;
+}
+.Nombre{
+    color: #c05aa2;
+      font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      font: weight 500px;
+      font-style: normal;
+      text-align: center;
+    }
+.redes {    width: 10%;
+    height: auto; 
+    max-height: 5px; 
+    object-fit: scale-down;
+    margin: 0;
+    padding: 10px;
+    text-align: center; 
+    justify-content:center;
+    } 
+.social-icon {
+        width: 30px; 
+        height: 30px;
+    }
