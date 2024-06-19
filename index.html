@@ -13,18 +13,19 @@
 </head>
 <body class="background">
 
-    <!-- Header -->
-    <header class="bg-pink">
+    
+    <header class="bg-pink" >
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center py-3">
+            <div class="d-flex">
                 <div class="logo">
                     <img src="../ecommerce web/imagenes/l.png" alt="Logo de la tienda" width="120">
                 </div>
             <div class="Nombre"> <h2>CATA LUCCIONI</h2></div>
                 <nav>
                     <ul class="nav">
-                        <li class="nav-item"><a href="./index.html"Target="_blank" class="nav-link">Inicio</a></li>
-                        <li class="nav-item"><a href="./Productos/Productos.html"Target="_blank" class="nav-link">Productos/Carrito</a></li>
+                        <li class="nav-item"><a href="../ecommerce web/index.html"Target="_blank" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="../ecommerce web/Productos/Productos.html"Target="_blank" class="nav-link">Productos/
+                            Carrito</a></li>
                        
                        
                     </ul>
@@ -34,7 +35,7 @@
     </header>
 
     
-    <div class="carousel-container my-4">
+    <div class="carousel-container ">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -69,7 +70,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="./imagenes/f700e56f-fc49-44c3-a95a-8f7a2ec6f3dd.jfif" class="card-img-top" alt="">
+                        <img src="../ecommerce web/imagenes/f700e56f-fc49-44c3-a95a-8f7a2ec6f3dd.jfif" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="card-title">Campera Universitaria  </h5>
                             <p class="card-text">Temporada Otoño-Invierno 2024</p>
@@ -80,7 +81,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="./imagenes/descarga (2).jfif" class="card-img-top" alt="Producto 2">
+                        <img src="../ecommerce web/imagenes/descarga (2).jfif" class="card-img-top" alt="Producto 2">
                         <div class="card-body">
                             <h5 class="card-title">Campera de cuero Cherry Red</h5>
                             <p class="card-text">Temporada Otoño-Primavera 2024 </p>
@@ -91,9 +92,9 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="./imagenes/d9d76750-fc77-42a8-9649-05b782146d47.jfif" class="card-img-top" alt="Producto 3">
+                        <img src="../ecommerce web/imagenes/d9d76750-fc77-42a8-9649-05b782146d47.jfif" class="card-img-top" alt="Producto 3">
                         <div class="card-body">
-                            <h5 class="card-title">Sueter de Cachemira color Crudo </h5>
+                            <h5 class="card-title">Sueter de Cachemira Crudo </h5>
                             <p class="card-text">Temporada Otoño-Primavera 2024 </p>
                             <p class="card-text">$45.000</p>
                             <button class="Carrito">Añadir al Carrito</button>
@@ -113,7 +114,7 @@
                             <h5 class="card-title">Pollera de Cuerina Marron</h5>
                             <p class="card-text">Temporada Primavera-Verano 2023</p>
                             <p class="card-text">$20.000</p>
-                            <button class="btn btn-primary btn-agregar" data-nombre="Pollera de cuero Marron" data-precio="20.000">Agregar al carrito</button>
+                            <button class="Carrito">Añadir al Carrito</button>
                         </div>
                     </div>
                 </div>
@@ -130,7 +131,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="./imagenes/b977bcfe-db03-4e55-8600-3c02047ca05a.jfif" class="card-img-top" alt="Oferta 3">
+                        <img src="../ecommerce web/imagenes/b977bcfe-db03-4e55-8600-3c02047ca05a.jfif" class="card-img-top" alt="Oferta 3">
                         <div class="card-body">
                             <h5 class="card-title">The folklore cardigan</h5>
                             <p class="card-text">Temporada Primavera-Verano 2023</p>
@@ -142,32 +143,11 @@
             </div>
         </section>
     </main>
-    <script>
-          btnAgregar.forEach(btn => {
-                btn.addEventListener('click', function () {
-                    const nombre = this.getAttribute('data-nombre');
-                    const precio = parseFloat(this.getAttribute('data-precio'));
-
-                    // Agregar producto al arreglo del carrito
-                    carrito.push({ nombre, precio });
-
-                    // Actualizar visualización del carrito
-                    mostrarCarrito();
-                });
-            });
-              // Guardar carrito en el almacenamiento local
-              localStorage.setItem('carrito', JSON.stringify(carrito));
-              
-              function cargarCarrito() {
-                const carritoGuardado = JSON.parse(localStorage.getItem('carrito'));
-                if (carritoGuardado) {
-                    carrito = carritoGuardado;
-                    mostrarCarrito();
-    </script>
-    
+   
     <footer class="bg-light py-4">
         <div class="container">
-            <div class="row text-center text-md-left">
+        
+            <div  id="footer" class="row text-center text-md-left">
                 <div class="col-md-4 mb-4 mb-md-0">
                     <h5>Información</h5>
                     <ul class="list-unstyled">
@@ -184,19 +164,20 @@
                         <li><a href="#">Dirección</a></li>
                     </ul>
                 </div>
-                <div class="redes">
-                    <h5>Síguenos</h5>
-                    <a href="#"><img src="./imagenes/Facebook Pink Icon.jfif" Target="_blank"alt="Facebook" class="social-icon "></a>
-                    <a href="#"><img src="./imagenes/4b7e7f08-32f9-486d-a9a9-de1ada25101e.jfif" Target="_blank"alt="Twitter" class="social-icon "></a>
-                    <a href="#"><img src="./imagenes/Instagram.jfif" Target="_blank" alt="Instagram" class="social-icon"></a>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 id="siguenos">Síguenos</h5>
+                    <a href="#"><img src="../ecommerce web/imagenes/Facebook Pink Icon.jfif" Target="_blank"alt="Facebook" class="social-icon "></a>
+                    <a href="#"><img src="../ecommerce web/imagenes/4b7e7f08-32f9-486d-a9a9-de1ada25101e.jfif" Target="_blank"alt="Twitter" class="social-icon "></a>
+                    <a href="#"><img src="../ecommerce web/imagenes/Instagram.jfif" Target="_blank" alt="Instagram" class="social-icon"></a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS and dependencies -->
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
