@@ -13,7 +13,7 @@
 </head>
 <body class="background">
 
-    <!-- Header -->
+    
     <header class="bg-pink">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center py-3">
@@ -24,7 +24,8 @@
                 <nav>
                     <ul class="nav">
                         <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
-                        <li class="nav-item"><a href="../Productos/Productos.html" class="nav-link">Productos/Carrito</a></li>
+                        <li class="nav-item"><a href="../Productos/Productos.html" class="nav-link">Productos/
+                            Carrito</a></li>
                        
                     
                     </ul>
@@ -45,7 +46,7 @@
                             <h5 class="card-title">Campera Universitaria  </h5>
                             <p class="card-text">Temporada Otoño-Invierno 2024</p>
                             <p class="card-text">$45.000</p>
-                            <button class="Carrito">Añadir al Carrito</button>
+                            <button class="btn btn-primary btn-agregar" data-nombre="Campera Universitaria" data-precio="45.000">Agregar al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -106,7 +107,7 @@
                             <h5 class="card-title">The folklore cardigan</h5>
                             <p class="card-text">Temporada Primavera-Verano 2023</p>
                             <p class="card-text">$20000</p>
-                            <button class="Carrito">Añadir al Carrito</button>
+                            <button class="btn btn-primary btn-agregar" data-nombre="The folklore cardigan" data-precio="20.000">Agregar al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -129,7 +130,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!-- JavaScript personalizado -->
+
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     const btnAgregar = document.querySelectorAll('.btn-agregar');
@@ -200,35 +201,35 @@ document.addEventListener('DOMContentLoaded', function () {
 </body>
 </html>
     
-    <footer class="bg-light py-4">
-        <div class="container">
-            <div class="row text-center text-md-left">
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h5>Información</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Sobre nosotros</a></li>
-                        <li><a href="#">Política de privacidad</a></li>
-                        <li><a href="#">Términos y condiciones</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h5>Contacto</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Correo electrónico</a></li>
-                        <li><a href="#">Teléfono</a></li>
-                        <li><a href="#">Dirección</a></li>
-                    </ul>
-                </div>
-                
-                <div class="redes">
-                    <h5>Síguenos</h5>
-                    <a href="#"><img src="../imagenes/Facebook Pink Icon.jfif" alt="Facebook" class="social-icon "></a>
-                    <a href="#"><img src="../imagenes/4b7e7f08-32f9-486d-a9a9-de1ada25101e.jfif" alt="Twitter" class="social-icon "></a>
-                    <a href="https://www.instagram.com/cataropa.web?igsh=MWJkZTZ3cnlpeDA3aw%3D%3D&utm_source=qr"><img src="../imagenes/Instagram.jfif" alt="Instagram" class="social-icon"></a>
-                </div>
+<footer class="bg-light py-4">
+    <div class="container">
+    
+        <div  id="footer" class="row text-center text-md-left">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5>Información</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5>Contacto</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Correo electrónico</a></li>
+                    <li><a href="#">Teléfono</a></li>
+                    <li><a href="#">Dirección</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 id="siguenos">Síguenos</h5>
+                <a href="#"><img src="../imagenes/Facebook Pink Icon.jfif" Target="_blank"alt="Facebook" class="social-icon "></a>
+                <a href="#"><img src="../imagenes/4b7e7f08-32f9-486d-a9a9-de1ada25101e.jfif" Target="_blank"alt="Twitter" class="social-icon "></a>
+                <a href="#"><img src="../imagenes/Instagram.jfif" Target="_blank" alt="Instagram" class="social-icon"></a>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -236,3 +237,4 @@ document.addEventListener('DOMContentLoaded', function () {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+    
